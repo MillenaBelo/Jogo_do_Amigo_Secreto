@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+:root{
+    --fonte: 'Jersey 10', sans-serif;
+    --cor-primaria: #444444;
+    --cor-secundaria: #7e7e7e;
+    --cor-tercearia: #a7c957;
+    --cor-defalt: #c0c0c0;
+    --cor-hover: #ff66c4;
+    --borda-padrao: 4px solid #a7c957;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte);
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    height: 100vh;
+}
+
+header{
+    background-color: var(--cor-secundaria);
+    border-bottom: var(--borda-padrao);
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 35px;
+    color: var(--cor-tercearia);
+    text-shadow: 3px 3px var(--cor-primaria);
+}
+
+.area__area{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 2.7% 10%;
+}
+
+.area__input{
+    display: flex;
+    justify-content: space-between;
+}
+
+#caixa__input{
+    border: var(--borda-padrao);
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    width: 90%;
+    padding: 4px;
+    font-size: 20px;
+    color: var(--cor-defalt);
+}
+
+input::placeholder{
+    color: var(--cor-secundaria);
+    font-size: 20px;
+}
+
+button:hover{
+    color: var(--cor-hover);
+
+}
+
+button{
+    border: var(--borda-padrao);
+    font-size: 30px;
+    padding: 4px 15px;
+    background-color: var(--cor-tercearia);
+    color: var(--cor-primaria);
+}
+
+.area__print{
+    display: flex;
+    justify-content: space-between;
+    border: var(--borda-padrao);
+    padding: 4px 4px 4px 4px;
+    min-height: 100px;
+    color: var(--cor-defalt);
+    font-size: 20px;
+}
+
+.area__botao{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    text-align: left;
+    padding: 10px;
+    font-size: 14px;
+}
+
+h2{
+    font-weight: normal;
+}
+
+.nome__Selecionado{
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    vertical-align: baseline;
+}
